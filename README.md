@@ -1,2 +1,3 @@
 # basic-react
-A Very simple react component
+A very simple react component
+http://northwestdiscovery.s3-website-us-west-2.amazonaws.com/react/
