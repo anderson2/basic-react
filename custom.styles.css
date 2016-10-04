@@ -1,0 +1,10 @@
+.image {
+    opacity: 0; 
+    transition: opacity 15.0s;
+    margin-bottom: 25px;
+    width: 42%;
+}
+
+.image-loaded { 
+    opacity: 1;
+}
