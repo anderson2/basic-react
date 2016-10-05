@@ -1,10 +1,40 @@
+body {
+    margin: 10px;
+}
+
 .image {
+    float: right;
     opacity: 0; 
     transition: opacity 15.0s;
     margin-bottom: 25px;
     width: 42%;
 }
 
+.image2 {
+    float: left;
+    opacity: 0; 
+    transition: opacity 35.0s;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+    width: 20%;
+}
+
 .image-loaded { 
     opacity: 1;
+}
+
+.references {
+    float: left;
+}
+
+li {
+    list-style-type: none;
+}
+
+footer {
+    margin-top: 25px;
+    border-top: 2px;
+    border-style: solid;
+    border-color: green;
 }
