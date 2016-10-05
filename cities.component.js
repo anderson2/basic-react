@@ -1,6 +1,7 @@
 class Cities extends React.Component {
     render() {
-        const currentTime = new Date();
+        /* var currentTime = new Date(); */
+        
         const cityList = [ 'Vancouver', 'Calgary', 'London'
             /*
             { name: 'Vancouver', province: 'BC'}, 
@@ -12,13 +13,23 @@ class Cities extends React.Component {
         return (
             <div>
                 <br/>
-                <p className='intro'>
-                    { cityList[0] } time is: 
-                    { currentTime.toTimeString() }
-                </p>
+                <ul>
+                    <li>{ this.props.localTime.toDateString() }</li>
+                    <li>{ this.props.localTime.toTimeString() }</li>
+
+                </ul>
+
+                <ul>
+                    {/*
+                        To Do: Learn how to set properties
+                        <li>{ this.props.localTime.setHours(this.props.localTime.getHours() + 1).toTimeString() }</li>
+                        <li>{ cityList[1] } time is { currentTime.setHours(currentTime.getHours() + 1).toTimeString() }</li>
+                    */}
+                </ul>
+                
                 <ul>
                     { cityList.map( cityName =>
-                            <li>{ cityName }</li> )
+                        <li>{ cityName } updates: none scheduled</li> )
                     }
                 </ul>
                 <br/>
@@ -30,4 +41,8 @@ class Cities extends React.Component {
 
 let target = document.getElementById('cities');
 
-ReactDOM.render( <Cities />, target );
+function updateTime() {
+    ReactDOM.render( <Cities localTime={new Date()} />, target );
+}
+
+setInterval(updateTime, 500);
