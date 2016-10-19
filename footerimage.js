@@ -31,8 +31,11 @@ var ImageComponent = React.createClass({
 
 ReactDOM.render(
   <ImageComponent 
-    src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Vincent_van_Gogh_-_La_charrette_bleue_%28Fogg_Art_Museum%29.jpg"/>,
-    document.getElementById('footer-image')
+  
+    src="images/rn-langlois-bridge-3.png"/>, document.getElementById('footer-image')
 );
 
-/* Adapted from: http://buildwithreact.com/article/fade-in-image-recipe */
+/* 
+Adapted from: http://buildwithreact.com/article/fade-in-image-recipe 
+Optional image: src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Vincent_van_Gogh_-_La_charrette_bleue_%28Fogg_Art_Museum%29.jpg"/>
+*/

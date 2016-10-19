@@ -31,8 +31,12 @@ var ImageComponent = React.createClass({
 
 ReactDOM.render(
   <ImageComponent 
-    src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Vincent_Willem_van_Gogh_-_Pont_de_Langlois_-_Kr%C3%B6ller-M%C3%BCller.jpg"/>,
-    document.getElementById('welcome-image')
+    src="images/rn-android-emulator-3.png"/>, document.getElementById('welcome-image')  
+
 );
 
-/* Source: http://buildwithreact.com/article/fade-in-image-recipe */
+/* Source: http://buildwithreact.com/article/fade-in-image-recipe 
+  
+   Image Source src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Vincent_Willem_van_Gogh_-_Pont_de_Langlois_-_Kr%C3%B6ller-M%C3%BCller.jpg"/>,
+    document.getElementById('welcome-image')
+*/
